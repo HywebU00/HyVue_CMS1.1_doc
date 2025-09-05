@@ -17,9 +17,9 @@
 
   - [容器組件(Containment)](<components/容器組件(containment).md>)
   - [控制組件(Controls)](<components/控制組件(controls).md>)
-  - [反饋式組件(Feedback)](<反饋式組件(feedback).md>)
-  - [圖像與圖標組件(Image&Icon)](<圖像與圖標組件(imageIcon).md>)
-  - [導覽式組件(Navigation)](<導覽式組件(navigation).md>)
+  - [反饋式組件(Feedback)](<components/反饋式組件(feedback).md>)
+  - [圖像與圖標組件(Image&Icon)](<components/圖像與圖標組件(imageIcon).md>)
+  - [導覽式組件(Navigation)](<components/導覽式組件(navigation).md>)
   - [挑選器組件(Pickers)](<components/挑選器組件(pickers).md>)
   - [選擇組件(Selection)](<components/選擇組件(selection).md>)
 
