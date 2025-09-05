@@ -8,12 +8,14 @@
 
 ?> 日期選擇器元件 詳請請參考[文件連結](https://vuetifyjs.com/en/components/date-pickers/#usage)
 
-<img  style="max-width:1200px;" src="doc_img/img_datepicker.png"></img>
+<img  src="doc_img/img_datepicker.png"></img>
 
 <h4>引入元件</h4>
 
 ```vue
-<template></template>
+<template>
+  <v-date-picker class="textDatePicker" color="secondary60" header-color="neutral100" show-adjacent-months></v-date-picker>
+</template>
 ```
 
 <hr style="margin-bottom:8rem;"/>

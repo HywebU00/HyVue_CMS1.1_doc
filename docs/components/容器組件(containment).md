@@ -8,7 +8,7 @@
 
 ?> 按鈕組件 詳請請參考[文件連結](https://vuetifyjs.com/en/components/buttons/#usage)
 
-<img  style="max-width:1200px;" src="doc_img/img_containment_btn.png"></img>
+<img  src="doc_img/img_containment_btn.png"></img>
 
 <h4>引入元件</h4>
 
@@ -34,7 +34,7 @@
 
 ?> 卡片樣式 詳請請參考[文件連結](https://vuetifyjs.com/zh-Hans/components/cards)
 
-<img  style="max-width:1200px;" src="doc_img/img_card.png"></img>
+<img  src="doc_img/img_card.png"></img>
 
 <h4>引入元件</h4>
 
@@ -61,7 +61,7 @@
 
 ?> 標籤樣式 詳請請參考[文件連結](https://vuetifyjs.com/zh-Hans/components/chip)
 
-<img  style="max-width:1200px;" src="doc_img/img_chip.png"></img>
+<img  src="doc_img/img_chip.png"></img>
 
 <h4>引入元件</h4>
 
@@ -81,7 +81,7 @@
 
 ?> 對話框樣式 詳請請參考[文件連結](https://vuetifyjs.com/zh-Hans/components/dialogs)
 
-<img  style="max-width:1200px;" src="doc_img/img_dialogs.png"></img>
+<img src="doc_img/img_dialogs.png"></img>
 
 <h4>引入元件</h4>
 
@@ -116,12 +116,37 @@
 
 ?> 擴展面板樣式 詳請請參考[文件連結](https://vuetifyjs.com/en/components/expansion-panels/#usage)
 
-<img  style="max-width:1200px;" src="doc_img/img_dialogs.png"></img>
+<img src="doc_img/img_dialogs.png"></img>
 
 <h4>引入元件</h4>
 
 ```vue
-<template></template>
+<template>
+  <v-expansion-panels>
+    <v-expansion-panel>
+      <v-expansion-panel-title collapse-icon="mdi-minus" expand-icon="mdi-plus"> Title </v-expansion-panel-title>
+      <v-expansion-panel-text> ... </v-expansion-panel-text>
+    </v-expansion-panel>
+    <v-expansion-panel>
+      <v-expansion-panel-title>
+        Title
+        <template v-slot:actions="{ expanded }">
+          <v-icon :color="!expanded ? 'teal' : ''" :icon="expanded ? 'mdi-pencil' : 'mdi-check'"></v-icon>
+        </template>
+      </v-expansion-panel-title>
+      <v-expansion-panel-text> ... </v-expansion-panel-text>
+    </v-expansion-panel>
+    <v-expansion-panel>
+      <v-expansion-panel-title disable-icon-rotate>
+        Title
+        <template v-slot:actions>
+          <v-icon color="error" icon="mdi-alert-circle"> </v-icon>
+        </template>
+      </v-expansion-panel-title>
+      <v-expansion-panel-text> .... </v-expansion-panel-text>
+    </v-expansion-panel>
+  </v-expansion-panels>
+</template>
 ```
 
 <hr style="margin-bottom:8rem;"/>
@@ -130,12 +155,17 @@
 
 ?> 提示樣式 詳請請參考[文件連結](https://vuetifyjs.com/en/components/tooltip)
 
-<img  style="max-width:1200px;" src="doc_img/img_tooltip.png"></img>
+<img  src="doc_img/img_tooltip.png"></img>
 
 <h4>引入元件</h4>
 
 ```vue
-<template></template>
+<template>
+  <v-tooltip activator="parent" location="start">prompt text</v-tooltip>
+  <v-tooltip activator="parent" location="end">prompt text</v-tooltip>
+  <v-tooltip activator="parent" location="top">prompt text</v-tooltip>
+  <v-tooltip activator="parent" location="bottom">prompt text</v-tooltip>
+</template>
 ```
 
 <hr style="margin-bottom:8rem;"/>
